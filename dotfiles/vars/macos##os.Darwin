@@ -1,0 +1,4 @@
+# ALL VALUES GET EXPANDED!
+
+# Location where the Android CLI tools and the SDK get installed to.
+setenv ANDROID_SDK_ROOT "$HOME/Library/Android/sdk"

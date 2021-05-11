@@ -1,4 +1,8 @@
 #!/bin/sh
+#
+# Installs crates provided through crates.io.
+#
+# @requires-env-optional: CARGO_TARGET_DIR: The directory where temporary files are stored.
 
 # Cargo subcommands.
 cargo install \

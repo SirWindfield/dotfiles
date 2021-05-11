@@ -11,6 +11,4 @@ curl --proto '=https' --tlsv1.2 -Sfo "$file" "$url"
 # Create target directory, extract files and move them to the correct directory.
 mkdir -p "$HOME/Library/Android/sdk"
 unzip $file 'cmdline-tools/*' -d $ANDROID_SDK_ROOT
-# mv $ANDROID_SDK_ROOT/tools/cmdline-tools/* $ANDROID_SDK_ROOT/tools
-# rm -rf $ANDROID_SDK_ROOT/tools/cmdline-tools
 rm -f $file

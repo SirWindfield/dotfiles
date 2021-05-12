@@ -1,0 +1,56 @@
+# Taps
+tap "adoptopenjdk/openjdk"
+tap "sirwindfield/tap"
+
+# Configuration
+cask_args appdir: "~/Applications", require_sha: true
+
+# Core
+brew "diff-so-fancy"
+brew "dust"
+brew "exa"
+brew "fish"
+brew "fzf"
+brew "gh"
+brew "git"
+brew "jq"
+brew "postgresql"
+brew "mas"
+brew "neovim"
+brew "ripgrep"
+brew "wget"
+brew "yadm"
+brew "yarn"
+
+# SirWindfield/homebrew-tap
+brew "gh-labels-cli"
+brew "git-cm"
+brew "git-work"
+brew "rhack"
+
+# Casks
+cask "adoptopenjdk8"
+cask "android-studio"
+cask "appcode"
+cask "clion"
+cask "datagrip"
+cask "docker"
+cask "firefox"
+cask "flutter"
+cask "intellij-idea"
+cask "jetbrains-toolbox"
+cask "provisionql"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlprettypatch"
+cask "qlstephen"
+cask "qlvideo"
+cask "quicklook-csv"
+cask "quicklook-json"
+cask "quicklookase"
+cask "responsively"
+cask "suspicious-package"
+cask "visual-studio-code"
+cask "webpquicklook"
+cask "webstorm"

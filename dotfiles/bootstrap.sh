@@ -20,9 +20,6 @@ main() {
 
         # Set all needed environment variables.
         source "$dir/vars/macos"
-        # Load the base variables at last to allow for platform-specific values to 
-        # be created beforehand.
-        source "$dir/vars/base"
 
         # Install Mac App Store programs.
         # TODO: prompt for apple id login (setup or enter).
@@ -40,6 +37,10 @@ main() {
         "$dir/configure/npm.sh"
         "$dir/packages/yarn.sh"
     fi
+
+    # Load the base variables at last to allow for platform-specific values to 
+    # be created beforehand.
+    source "$dir/vars/base"
 }
 
 main

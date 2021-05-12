@@ -12,3 +12,6 @@ curl --proto '=https' --tlsv1.2 -Sfo "$file" "$url"
 mkdir -p "$HOME/Library/Android/sdk"
 unzip $file 'cmdline-tools/*' -d $ANDROID_SDK_ROOT
 rm -f $file
+
+# Append CLI tools to path.
+appendpath "$ANDROID_SDK_ROOT/tools/cmdline-tools/bin"

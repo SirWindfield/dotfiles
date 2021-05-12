@@ -15,3 +15,6 @@ sdkmanager --sdk_root=$ANDROID_SDK_ROOT \
     "platforms;android-30" \
     "sources;android-30" \
     "system-images;android-30;google_apis;x86"
+
+# Once everything is downloaded we cann additionally add all platform tools to the path.
+appendpath "$ANDROID_SDK_ROOT/tools/platform-tools"

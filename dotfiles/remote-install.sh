@@ -1,8 +1,6 @@
 #!/bin/sh
 #
 # This script downloads all dotfiles and installs everything. Run it with the following command:
-#
-# curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/SirWindfield/dotfiles/main/remote-install.sh | sh
 
 echo ":: Installing yadm"
 curl --proto '=https' --tlsv1.2 --silent -fLo "$HOME/yadm" https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x "$HOME/yadm"

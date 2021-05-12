@@ -39,6 +39,12 @@ main() {
 
         # Configure macOS.
         find "$dir/configure/macos" -type f -name 'defaults.*' -exec {} \;
+
+        # Kill all affected programs.
+        for app in "Activity Monitor" "cfprefsd" "Dock" "Finder" "Safari" "SystemUIServer";
+ 	    do
+ 	        killall "${app}" > /dev/null 2>&1
+        done
     fi
 
     # Load the base variables at last to allow for platform-specific values to 

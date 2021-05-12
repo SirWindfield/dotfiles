@@ -9,3 +9,6 @@ source $HOME/.cargo/env
 
 # Install nightly toolchain
 rustup toolchain install nightly
+
+# Setup the path correctly.
+appendpath "$HOME/.cargo/bin"

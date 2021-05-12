@@ -35,7 +35,7 @@ main() {
 
         # Installs npm packages.
         "$dir/configure/npm.sh"
-        "$dir/packages/yarn.sh"
+        "$dir/packages/npm.sh"
     fi
 
     # Load the base variables at last to allow for platform-specific values to 

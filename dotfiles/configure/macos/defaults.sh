@@ -7,12 +7,18 @@
 # Set default theme to dark.
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
+# Make Fn keys behave as they should.
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
 # Expand save dialogs by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Save to disk by default.
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Remaps capslock to escape on all keyboards. This doesn't update the system preferences page though.
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
 
 ##############
 # Screenshots

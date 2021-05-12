@@ -56,3 +56,7 @@ cask "suspicious-package"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "webstorm"
+
+# macOS apps
+mas "DaisyDisk", id: 411643860
+mas "XCode", id: 497799835

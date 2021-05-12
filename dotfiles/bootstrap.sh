@@ -21,10 +21,6 @@ main() {
         # Set all needed environment variables.
         source "$dir/vars/macos"
 
-        # Install Mac App Store programs.
-        # TODO: prompt for apple id login (setup or enter).
-        # "$dir/install/macos/mas-apps.sh"
-
         # Install Android development dependencies.
         "$dir/install/android-cli-tools.sh"
         "$dir/packages/android.sh"

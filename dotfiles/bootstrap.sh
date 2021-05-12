@@ -36,6 +36,9 @@ main() {
         # Installs npm packages.
         "$dir/configure/npm.sh"
         "$dir/packages/npm.sh"
+
+        # Configure macOS.
+        find "$dir/configure/macos" -type f -name 'defaults.*' -exec {} \;
     fi
 
     # Load the base variables at last to allow for platform-specific values to 

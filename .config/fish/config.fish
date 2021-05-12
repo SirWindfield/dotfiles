@@ -4,6 +4,6 @@ end
 
 function appendpath
 	set l (echo $argv[1] | envsubst)
-	echo $l
+	echo "Appending $l"
 	fish_add_path (echo $argv[1] | envsubst)
 end

@@ -2,3 +2,5 @@
 
 setenv DENO_DIR "$HOME/.package-managers/deno"
 setenv GEM_HOME "$HOME/.package-managers/gem"
+
+appendpath "$HOME/dotfiles/bin"

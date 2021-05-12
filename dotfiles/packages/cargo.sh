@@ -18,4 +18,4 @@ cargo install \
 
 # Other CLIs.
 cargo install \
-    diesel --no-default-features --features "postgres,sqlite"
+    diesel_cli --no-default-features --features "postgres,sqlite"

@@ -1,5 +1,5 @@
 function appendpath() {
-	"export PATH=$1:$PATH" >> "$HOME/.profile"
+	echo "export PATH=$1:\$PATH" >> "$HOME/.profile"
 }
 
 function setenv() {
